@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../svg/logo.svg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button } from "./Button";
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
@@ -12,7 +12,7 @@ class Header extends Component {
       <HeaderComponent className="header-container">
         <div className="header-top">
           <Logo src={logo} alt="Netflix" />
-          <NavLink className="signIn-btn" to="/">
+          <NavLink className="signIn-btn" to="/" style={{ color: "white" }}>
             Sign In
           </NavLink>
         </div>
